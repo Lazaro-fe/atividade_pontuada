@@ -18,10 +18,12 @@ elif sexo == "m" and estado_civil == "casado":
     tempo_de_conjuge = input("Há quanto tempo você está casado : ")
 if sexo == "f" and estado_civil == "solteiro":
     print("Tenha paciência! (= )")
+    tempo_de_conjuge = "inválido"
 elif sexo == "m" and estado_civil == "solteiro":
     print("Tenha paciência mano! (= )")
+    tempo_de_conjuge = "inváliddo"
 else :
-    tempo_de_conjuge = "Não se aplica"
+    tempo_de_conjuge = "invalido"
 
 print()
 print(f"Nome : {nome}")
