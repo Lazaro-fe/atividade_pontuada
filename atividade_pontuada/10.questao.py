@@ -9,15 +9,13 @@ quantidade_de_combustivel_vendido = int(input("Digite a quantidade de combustív
 
 valor_a_ser_pago = quantidade_de_combustivel_vendido
 
-# Verificando
-
 match tipo_de_combustivel :
-    case "A-alcool" :
+    case "A" :
         if quantidade_de_combustivel_vendido > 25 :
             total = quantidade_de_combustivel_vendido * 3.79 * 0.04
         elif quantidade_de_combustivel_vendido <= 25 :
             total = quantidade_de_combustivel_vendido * 3.79 * 0.02
-    case "G-gasolina" :
+    case "G" :
         if quantidade_de_combustivel_vendido > 25 :
             total = quantidade_de_combustivel_vendido * 6.59 * 0.05
         elif quantidade_de_combustivel_vendido <= 25 :
@@ -26,6 +24,6 @@ match tipo_de_combustivel :
 # Exibindo Resultados 
 
 print()
-print(f"Tipo de combustivel escolido {tipo_de_combustivel}")
-print(f"Quantidade de conbustível {quantidade_de_combustivel_vendido}")
+print(f"Tipo de combustivel escolido : {tipo_de_combustivel}")
+print(f"Quantidade de combustível : {quantidade_de_combustivel_vendido}")
 print(f"Total á pagar : {total}")
