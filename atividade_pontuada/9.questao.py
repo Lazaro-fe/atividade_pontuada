@@ -23,6 +23,6 @@ else :
 # Exibindo Resultados
 
 print()
-print(f"Valor da renda ganha mensalmente : {valor_da_renda_mensal}")
-print(f"Valor do empréstimo solicitado : {valor_do_emprestimo}")
-print(f"Valor da prestações a serem pagas : {prestações}")
+print(f"Valor da renda ganha mensalmente : {valor_da_renda_mensal:.4f}")
+print(f"Valor do empréstimo solicitado : {valor_do_emprestimo:.4f}")
+print(f"Valor da prestações a serem pagas : {prestações:.4f}")
