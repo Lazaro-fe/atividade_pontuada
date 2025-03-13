@@ -23,11 +23,18 @@ maca_2 = float(2.20)
 morango = float(1.80)
 morango_2 = float(1.50)
 
-# Exibindo resultados 
+# Processamento
 
 if quantidade_de_maca or quantidade_de_morango < 5:
-    total = (quantidade_de_morango * morango) + (quantidade_de_maca * maca)
-    print(f"Total : {total}")
+    total_comprado = (quantidade_de_morango * morango) + (quantidade_de_maca * maca)
+    print(f"Total : {total_comprado}")
 elif quantidade_de_maca or quantidade_de_morango > 5:
     total_comprado = (quantidade_de_morango * morango_2) + (quantidade_de_maca * maca_2)
     print(f"Total da Comprado : {total_comprado}")
+
+# Exibindo Resultados 
+
+print()
+print(f"Quantidade de Morango : {quantidade_de_morango}")
+print(f"Quantidade de Maçã : {quantidade_de_maca}")
+print(f"Total à pagar : {total_comprado}")
