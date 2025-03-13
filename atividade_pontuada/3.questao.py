@@ -8,6 +8,7 @@ a = float(input("Digite o primeiro número : "))
 b = float(input("Digite o segundo número : "))
 
 opcao = int(input("Digite a opcao correspondente : "))
+c = a + b
 
 # PROCESSANDO
 
@@ -15,7 +16,7 @@ match opcao :
     case 1:
         if a == b:
        
-         c = a+b
+            c = a+b
         print(f"A : {a}")
         print(f"B : {b}")
         print(f"C : {c}")
