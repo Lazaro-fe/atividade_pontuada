@@ -8,14 +8,21 @@ n1 = float(input("Digite a nota de seu teste : "))
 n2  = float(input("Digite a nota da sua prova : "))
 
 media = (n1 + n2) / 2
-print(f"Média : {media:.2f}")
+
+# Processando
 
 match media:
     case 1:
         if media >= 6.0:
-            print("Você está Aprovado!! Parabéns ( = ")
+            resultado = "Você está Aprovado!! Parabéns ( = "
     case 2:
         if media < 4.0:
-            print("Você foi reprovado!!!")
+            resultado = "Você foi reprovado!!!"
     case _:
-        print("Você foi aprovado")
+        resultado = "Você foi aprovado"
+
+# Exibindo Resultados 
+
+print()
+print(f"Média : {media}")
+print(f"Resultado : {resultado}")
